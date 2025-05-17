@@ -22,7 +22,7 @@ unsigned long timestamp;
 float lat = 0;
 float lng = 0;
 String message = "";
-char phone_no[] = "+916374121538";
+char phone_no[] = "+91xxxxxxxxxx";
 
 // ESP-NOW setup
 typedef struct test_struct {
@@ -107,7 +107,7 @@ void loop() {
     SIM900A.println("AT+CMGF=1");
     delay(1000);
     Serial.println ("Set SMS Number");
-    SIM900A.println("AT+CMGS=\"+916374121538\"\r");
+    SIM900A.println("AT+CMGS=\"+91xxxxxxxxxx\"\r");
     delay(1000);
     Serial.println ("Set SMS Content");
     SIM900A.println("Help,I am in danger");
@@ -166,7 +166,7 @@ void loop() {
     SIM900A.println("AT+CMGF=1");
     delay(1000);
     Serial.println ("Set SMS Number");
-    SIM900A.println("AT+CMGS=\"+916374121538\"\r");
+    SIM900A.println("AT+CMGS=\"+91xxxxxxxxxx\"\r");
     delay(1000);
     Serial.println ("Set SMS Content");
     SIM900A.println("Sorry,sent by mistake");
